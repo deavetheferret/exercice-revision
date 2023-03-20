@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  [class^="box-"] {
+    background-color: #299d8f;
+    border: solid 1px black;
+    text-transform: uppercase;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    aspect-ratio: 1/1;
+    [class^="inbox-"] {
+      background-color: #ffb604;
+      border: solid 1px black;
+      width: 40px;
+      aspect-ratio: 1/1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+    }
+  }
+}
+
+.pos-1 {
+  .box-2 {
+    position: relative;
+    top: -30px;
+    left: 50px;
+  }
+}
+
+.pos-2 {
+  .box-1 {
+    position: relative;
+    .inbox-1 {
+      top: 0px;
+      right: 0px;
+    }
+    .inbox-2 {
+      top: 48px;
+      right: 48px;
+    }
+  }
+}
+
+.pos-3 {
+  .box-1 {
+    position: relative;
+    .inbox-1 {
+      top: -10px;
+      right: -20px;
+    }
+    .inbox-2 {
+      bottom: -10px;
+    }
+  }
+}
