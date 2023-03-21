@@ -1,0 +1,55 @@
+.trans-1 {
+  span {
+    color: orange;
+    background-color: rgb(240, 50, 157);
+    font-size: 25px;
+    transition: 0.8s;
+    cursor: pointer;
+    &:hover {
+      color: rgb(240, 50, 157);
+      background-color: orange;
+    }
+  }
+}
+
+.trans-2 {
+  background-color: rgb(240, 50, 157);
+  width: min-content;
+  padding: 20px;
+  transition: 0.5s;
+  &:hover {
+    transform: rotate(-90deg);
+    scale: 1.2;
+  }
+  span {
+    color: orange;
+    font-size: 25px;
+  }
+}
+
+.trans-3 {
+  span {
+    font-size: 25px;
+    position: relative;
+    cursor: pointer;
+    &::after {
+      content: "";
+      transition: 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      height: 3px;
+      width: 100%;
+      background-color: rgb(240, 50, 157);
+      margin: 0;
+      padding: 0;
+      z-index: -1;
+    }
+    &:hover {
+      &::after {
+        height: 100%;
+      }
+    }
+  }
+}
