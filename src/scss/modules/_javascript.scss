@@ -1,0 +1,24 @@
+[class^="container-ex-"] {
+  display: flex;
+  gap: 30px;
+  [class^="box-"] {
+    background-color: rgb(255, 223, 233);
+    display: flex;
+    width: 100px;
+    aspect-ratio: 4/3;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px darkblue;
+    color: darkblue;
+    font-size: 22px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .activate {
+    background-color: darkblue;
+    color: rgb(255, 223, 233);
+  }
+  .not-shown {
+    display: none;
+  }
+}
