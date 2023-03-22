@@ -1,0 +1,39 @@
+[class^="box-anim-"] {
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-color: orange;
+}
+
+.box-anim-1 {
+  animation: rotatingBox 3s linear infinite;
+}
+
+.box-anim-2 {
+  animation: movingBox 5s linear infinite;
+}
+
+@keyframes rotatingBox {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes movingBox {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(80px, 0px);
+    background-color: brown;
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 50px);
+    background-color: brown;
+  }
+}
